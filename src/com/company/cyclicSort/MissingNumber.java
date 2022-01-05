@@ -4,7 +4,7 @@ public class MissingNumber {
 
     public static void main(String[] args) {
 
-        int[] nums = {4,0,2,1};
+        int[] nums = {3,0,1};
         sort(nums);
 
         System.out.println(missingNumber(nums));
