@@ -4,7 +4,8 @@ public class Q1_MissingNumber {
 
     public static void main(String[] args) {
 
-        int[] arr = {9,6,4,2,3,5,7,0,1};
+//        int[] arr = {9,6,4,2,3,5,7,0,1};
+        int[] arr = {0,1,2,3};
         cyclingSort(arr);
         System.out.println(missingNumber(arr));
 
@@ -26,7 +27,7 @@ public class Q1_MissingNumber {
 
         }
 
-        return missingNumber;
+        return arr.length;
 
 
     }
