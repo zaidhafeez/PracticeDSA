@@ -1,4 +1,4 @@
-package practice;
+package practice.lecture.cyclic;
 
 public class Q1_MissingNumber {
 
