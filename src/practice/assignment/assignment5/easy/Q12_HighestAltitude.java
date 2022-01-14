@@ -1,4 +1,4 @@
-package practice.assignment.assignment5;
+package practice.assignment.assignment5.easy;
 
 public class Q12_HighestAltitude {
 

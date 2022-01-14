@@ -1,4 +1,4 @@
-package practice.assignment.assignment5;
+package practice.assignment.assignment5.easy;
 
 import java.util.Arrays;
 //https:leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/discuss/575760/Java-simple-to
