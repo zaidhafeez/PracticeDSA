@@ -1,4 +1,4 @@
-package practice.assignment.assignment5;
+package practice.assignment.assignment5.easy;
 // -- For Advanced -- //
 // we can solve this by using Arrays.stream(nums).sum() API //
 public class Q4_RichWealth {

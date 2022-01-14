@@ -1,4 +1,4 @@
-package practice.assignment.assignment5;
+package practice.assignment.assignment5.easy;
 
 import java.util.ArrayList;
 
