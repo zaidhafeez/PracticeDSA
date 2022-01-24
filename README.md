@@ -11,4 +11,4 @@ In future, I will attached note with this repository.
 
 ## Contributions
 
-You can contribute in this repository by creating Pull Request after reviewing the repository definitely it will merge with ==main== repository
+You can contribute in this repository by creating Pull Request after reviewing the repository definitely it will merge with ```main``` repository
