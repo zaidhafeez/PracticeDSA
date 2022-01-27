@@ -13,6 +13,10 @@ public class CustomQueue {
 
     }
 
+    CustomQueue(int size){
+        this.data = new int[size];
+    }
+
     public boolean enqueue(int item) throws Exception {
 
         if(isFull()){
@@ -60,9 +64,7 @@ public class CustomQueue {
 
     }
 
-    CustomQueue(int size){
-        this.data = new int[size];
-    }
+
 
     public boolean isFull() {
 
