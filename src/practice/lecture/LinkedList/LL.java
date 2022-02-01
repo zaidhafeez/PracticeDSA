@@ -6,6 +6,8 @@ public class LL {
     private Node tail;
     private int size;
 
+    // insertAtBeginning//
+
     public void insertAtBeginning(int val){
 
         Node node = new Node(val);
@@ -21,6 +23,8 @@ public class LL {
         size += 1;
 
     }
+
+    // insertAtIndex//
 
     public void insert(int val, int index){
 
@@ -52,6 +56,8 @@ public class LL {
 
     }
 
+    // insertAtEnd//
+
     public void insertAtEnd(int val){
 
 
@@ -68,6 +74,8 @@ public class LL {
 
     }
 
+    // delAtBegin //
+
     public int delAtBegin(){
 
         int val = head.val;
@@ -81,6 +89,8 @@ public class LL {
         return val;
 
     }
+
+    // delAtEnd //
 
     public int delAtEnd(){
 
@@ -96,6 +106,8 @@ public class LL {
 
         return val;
     }
+
+    // delAtIndex  //
 
 
     public int delAtIndex(int index){
