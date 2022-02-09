@@ -88,9 +88,9 @@ public class QueueTwoPointer {
     }
 
 
-    private boolean isFull() {
+    public boolean isFull() {
 
-        return rear == size - 1;
+        return rear == data.length - 1;
 
     }
 
