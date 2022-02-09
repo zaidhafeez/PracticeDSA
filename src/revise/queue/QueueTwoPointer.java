@@ -64,6 +64,7 @@ public class QueueTwoPointer {
 
         if (isEmpty()) throw new Exception("Queue is Empty");
         int removed = data[front];
+        // set the value after deleting last element from queue
         if(front == rear) front = rear = -1;
         else front++;
         length--;
