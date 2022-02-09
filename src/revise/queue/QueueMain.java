@@ -4,7 +4,7 @@ public class QueueMain {
 
     public static void main(String[] args) throws Exception {
 
-        QueueTwoPointer queue = new QueueTwoPointer(4);
+        QueueTwoPointer queue = new DynamicQueue1(3);
 //        Queue queue = new Queue(3);
         queue.enqueue(1);
         queue.enqueue(2);
@@ -21,7 +21,7 @@ public class QueueMain {
         queue.enqueue(5);
         queue.enqueue(6);
         queue.enqueue(7);
-        queue.dequeue();
+//        queue.dequeue();
         queue.enqueue(8);
         queue.display();
 
