@@ -26,9 +26,9 @@ public class QueueTwoPointer {
 
     public boolean enqueue(int val) throws Exception {
 
-        if (isEmpty()) front = rear = 0;
+        if (isEmpty()) front = 0;
 
-        if(front > 0 && rear == size){
+        if(front > 0 && rear == size - 1){
 
             shiftQ(data);
 
@@ -40,7 +40,7 @@ public class QueueTwoPointer {
         }
 
 
-        data[rear++] = val;
+        data[++rear] = val;
         length++;
 
         return true;
@@ -50,23 +50,22 @@ public class QueueTwoPointer {
     private void shiftQ(int[] data) {
 
         int j = 0;
-        for (int i = front; i < rear; i++) {
+        for (int i = front; i <= rear; i++) {
             data[j] = data[i];
             j++;
         }
         front = 0;
-        rear = j;
+        rear = j - 1;
 
     }
 
     public int dequeue() throws Exception {
-        if(front == rear) front = rear = -1;
+
 
         if (isEmpty()) throw new Exception("Queue is Empty");
-
         int removed = data[front];
-
-        front++;
+        if(front == rear) front = rear = -1;
+        else front++;
         length--;
 
         return removed;
@@ -90,13 +89,18 @@ public class QueueTwoPointer {
 
     private boolean isFull() {
 
-        return rear == size;
+        return rear == size - 1;
 
     }
 
     public void display(){
 
-        for (int i = front; i < rear; i++) {
+        if (isEmpty()) {
+            System.out.println("Queue is Empty");
+            return;
+        }
+
+        for (int i = front; i <= rear; i++) {
 
             System.out.print(data[i] + "<--");
 

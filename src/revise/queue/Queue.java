@@ -10,10 +10,14 @@ public class Queue {
 
     Queue(){
 
-        this.front = 0;
-        this.data = new int[DEFAULT_SIZE];
-        this.length = 0;
+        this(DEFAULT_SIZE);
 
+    }
+
+    Queue(int size){
+        this.front = -1;
+        this.data = new int[size];
+        this.length = 0;
     }
 
     public boolean enqueue(int value) throws Exception {
@@ -22,7 +26,7 @@ public class Queue {
             throw new Exception("Queue is Full");
         }
 
-        data[front++] = value;
+        data[++front] = value;
         length++;
         return true;
 
@@ -57,7 +61,7 @@ public class Queue {
 
     private boolean isEmpty() {
 
-        return front == 0;
+        return front == -1;
 
     }
 
